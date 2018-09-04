@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Ahmedabad - City tour</b></p>
+
+Arrive Ahmedabad and transfer to your hotel. Later proceed for city tour of Ahmedabad. Visit Gandhi Ashram: On a quiet peaceful stretch of the Sabarmati River, Mahatma Gandhi set up a simple retreat in 1915; Sidi Sayed Mosque: One part of the wall in the old citadel of the mosque built by Ahmed Shah’s slave, Sidi Sayed; Jumma Masjid: The Friday mosque was built by the city’s founder, Sultan Ahmed Shah, in 1423; Teen Darwaja: The triple-arched gateway was built by Sultan Ahmed Shah to serve as the royal entrance to the Maidan Shahi or the Royal Square; Adalaj Step-well: Step wells were built in olden times to serve the man purposes of – holding rain water for later use, a resting place for the travellers, a watering hole for the travelers who had caravans and animals with them; Akshardham, the Swaminarayan temple of Gandhinagar, is a modern complex, built in traditional Indian architectural style from 6,000 metric tons of pink Rajasthan sandstone, carved by expert artisans from Bansipahadpur. The temple is set in a multi-acre garden called Sahajanand Van, with intricate sculptures of Hindu Gods. (Closed on Mondays). Overnight stay in Ahmedabad.
+<p><b>Day 2: Ahmedabad - Dakor - Pavagadh - Ahmedabad</b></p>
+
+Today after breakfast proceed for a day excursion to Dakor and Pavagadh. Dakor, in its earlier phases as pilgrimage centre in Gujarat, was famous for the Danknath temple, a place of Shiva worship. In the later phases, it developed into a Vaishnavites centre with the growing fame of Ranchhodraiji temple, which was built in 1772 A.D. Today this place is known not only as a pilgrimage centre but also a trading centre where one can get the articles related to puja, and other rituals. Pavagadh: Most of the Hindus in India have faith in goddess Mahakali, particularly from the western region covering the states of Gujarat, Rajasthan &amp; Maharashtra. The famous and the oldest temple of Mahakali is situated at Pavagadh, near Vadodara, one of the main cities of Gujarat. The temple has become the place of the pilgrimage for almost all Hindus in India. This temple is among the three main Shaktipeeths in Gujarat. It has been said in Hindu Shastras that after the famous Tandava dance of Lord Shiva, the various parts of the body of Sati fell at many places. These places are called Shaktipeeths. It is said that the left breast of the Sati had fallen here at Pavagadh. As the name suggests, the temple is located on a mountain, near to the Champaner town. Later drive back to Ahmedabad. Overnight stay in Ahmedabad.<br><br>
+
+<p><b>Day 3: Ahmedabad - Dwarka</b></p>
+
+After breakfast drive to Dwarka; arrive Dwarka and transfer to your hotel. Dwarka: An ancient city, housing one of the principal pilgrimages - Dwarkadhish temple of Hindus. According to the legend, Lord Krishna moved to this coastal town to set up a capital. Marine excavations of the Dwarka coast have revealed important evidences of ancient city. Today, it is not only a major pilgrimage site but a pleasant spot for a beach holiday. Another popular place in Dwarka, part of the Dwarkadhish Temple is Sabha Mandapa. It is a 60-pillared hall, which houses almost 2500 years old scriptures. The hall has Jharokhas offering a nice view of the nearby flowing Gomati River. Attend evening Aarti at Dwarkadhish temple. Overnight stay in Dwarka.
+
+
+<p><b>Day 4: Dwarka – Local sightseeing</b></p>
+
+After breakfast visit Bet Dwarka and Nageshwar temple. Dwarka: Bet is situated at 30kms from Dwarka and is surrounded by sea from all sides. One can reach Bet from Dwarka through Okha by road. On reaching Okha port jetty, one can reach Bet through a little sea journey by a small boat. Nageshwar Temple or Nagnath Temple is located on the route between Gomati Dwarka and the Bet Dwarka Island on the coast of Saurashtra in Gujarat. The Jyotirlinga enshrined in the Temple of Nagnath is known as Nageshwar Mahadev and attracts thousands of pilgrims all around the year. This powerful Jyotirlinga symbolises protection from all poisons. It is said that those who pray to the Nageshwar Lingaa become free of poison. The Rudra Samhita shloka refers to Nageshwar with the phrase & Daarukaavane Naagesham’. The Rukmini temple, dating from 12 to 13 Century, was built in honour of Rani Rukmani, princess of Vidharba, which was to be married to Sishupala, but fled with Lord Krishna. This small temple, 1.5 km north of the city, is an architectural masterpiece. The temple walls are decorated with beautiful paintings and sculptures. Gopi Talav: This is the place where Lord Krishna used to play with his Gopikas. Overnight stay in Dwarka.
+<p><b>Day 5: Dwarka - Somnath</b></p>
+
+Early morning visits the Dwarkadhish Temple and witness the Aarti. After breakfast drive to drive to Somnath enroute visiting Porbandar. Porbandar, the coastal heritage town of Gujarat is located on the Saurashtra peninsula, on the Arabian Sea. This city is described in Skanda Purana as Sudamapuri and Ashmavati and had a flourishing trade with Africa and Arabia. According to the legends, this city was the main link of the great friendship between Lord Krishna and Sudama. Later visit Kirti Mandir – Kirti Mandir was the house of the Mahatma Gandhi and Kasturba, his wife. This place is situated near the place where the Mahatma Gandhi was born. Later continue to drive to Somnath; arrive Somnath and transfer to your hotel. The legendary shore temple of Somnath is one of the twelve most sacred shrines dedicated to the Lord Shiva. The temple contains the Jyotirlinga of Lord Shiva. Later visit Rudreshvara Temple – Rudreshvara Temple is a ruined temple located near the Somnath temple. Bhalka Tirth -Bhalka Tirth is situated halfway between the Veraval and Somnath. At this place, the Lord Krishna was mistaken for a deer and wounded by an arrow. Overnight stay in Somnath.
+<p><b>Day 6: Somnath - Bhavnagar</b></p>
+
+After breakfast drive to Bhavnagar; arrive Bhavnagar and transfer to hotel. Bhavnagar was founded by Bhavsinhji Gohil in 1723 AD near the Gulf of Khambhat, on a carefully chosen strategic location having potential of maritime trade. Till independence, Bhavnagar State was ruled by the Gohil Rajput clan. Gaurishanker Lake: A beautiful picnic spot near the lake. There is also a well laid out park. Takhteshwar Temple: Situated on a hill, the site provides a panoramic view. Lock Gate: The first of its kind in Gujarat. The sea-water here is impounded by the lock gates to keep ships afloat during low tide, which could be seen with special permission. Overnight stay in Bhavnagar.
+<p><b>Day 7: Bhavnagar – Palitana - Bhavnagar</b></p>
+
+Early morning proceed for an excursion to Palitana. Palitana: A 56kms drive from Bhavnagar. Palitana lies at the foot of the Shetrunjaya hill, with the Shetrunjaya River flowing to its south. The sacred hill rises in a crescendo of magnificent temples – 863 in all – that soar in marble splendour to the top of the hill. The temples were built over an impressive span of 900 years with each generation of pilgrims making its contribution to the shrines of Shetrunjaya. The 600-metre climb to Shetrunjaya is usually made on foot. Dolis or lift-chairs are also available for the ascent. Overnight stay in Bhavnagar.
+<p><b>Day 8: Bhavnagar – Ahmedabad - Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to Ahmedabad airport/railway station for your onward flight or back home.
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    
+  </tr>
+  <tr>
+    <td>Ahmedabad, Gujarat, India</td>
+    <td>Le Grand Residency or similar</td>
+    <td>Le Grand Residency or similar</td>  
+  </tr>
+  <tr>
+    <td>Bhavnagar ,Gujarat ,India</td>
+    <td>Top3 Lords Resort or similar</td>
+    <td>Top3 Lords Resort or similar</td>  
+  </tr>
+  <tr>
+    <td>Dwarka, Gujarat, India</td>
+    <td>Damji or similar</td>
+    <td>Dwarkadhish Lords Eco Inn or similar</td>  
+  </tr>
+  <tr>
+    <td>Somnath, Gujarat, India</td>
+    <td>Sun Plaza or similar</td>
+    <td>Lords Inn or similar</td>  
+  </tr>
+     
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th>  Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Extra Bed</th>
+    <th>Single</th>
+    <th>Child no bed</th>
+    
+  </tr>
+  
+  <tr>
+    <td>Standard</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>22990</td>
+    <td>18990</td>
+    <td>6990</td>
+    <td>43990</td>
+    <td>5990</td>
+    
+  </tr>
+  
+
+  <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>25990</td>
+    <td>21990</td>
+    <td>9990</td>
+    <td>48990</td>
+    <td>8490</td>
+    
+  </tr>
+  
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>2 Nights in Ahmedabad with breakfast</li><br>
+  <li>Full Day tour at Ramoji Film City (Entrance not included)</li><br>
+  <li>1 Night in Somnath with breakfast</li><br>
+  <li>2 Nights in Bhavnagar with breakfast</li><br>
+  <li>All transfers and local sightseeing by private AC vehicle</li><br>
+  
+
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

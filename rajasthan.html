@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Udaipur – Mount Abu</b></p>
+
+Arrival at Udaipur and transfer to Mount Abu for overnight stay. Sightseeing of Mount Abu – Dilwara Temples: This temple complex built in the Solanki style of architecture dates back to the 11th and 13th centuries AD. Carved out of white marble, these temples are dedicated to the Jain Tirthankars (enlightened souls). The oldest temple, the Vimal Vasahi temple, was built in 1031 AD and is dedicated to the first of the Jain Tirthankars. The temples are very famous for the intricate carvings, especially on the pillars. But the most striking feature of this Jain temple is the marble pendant in the dome of the porch. It hangs from the ceiling like an enchanting cluster of half-open lotuses with cups so finely carved that they appear to be transparent. Overnight stay in Mount Abu.
+
+
+<p><b>Day 2: Mount Abu – Local Sightseeing</b></p>
+
+Today morning after breakfast proceed to visit local sightseeing of Mount Abu. Visit Nakki Lake: Legend has it that this lake was carved out by the Gods. Set picturesquely amidst hills, it is the only artificial lake in India that is 1200 meters above sea level. The Nakki Lake, set amidst the misty hills, makes for a pretty picture with colorful tourist boats gliding past. Toad Rock, a uniquely-shaped rock, adds to the charm of the picturesque lake. The Natural beauty and breathtakingly beautiful temple architecture make this sightseeing tour in Mount, Abu memorable. Overnight stay in Mount Abu.
+
+<p><b>Day 3: Mount Abu - Udaipur</b></p>
+
+Enjoy your breakfast this morning at the hotel, check out and drive through valleys of the remote and peaceful Aravalli Range to Udaipur. We'll continue driving south, arriving Udaipur, known as the “City of Sunrise”. It is on the banks of the shimmering lake Pichola and is one of the most romantic cities of Rajasthan. Nestled among the lush hills of the Aravali, it has inevitably been dubbed the 'Venice of the East'. It is a kaleidoscope of fairy-tale palaces, lakes, temples, gardens and narrow lanes strewn with stalls, carries the flavor of the heroic past, epitomizing valor and chivalry. Udaipur was founded in 1568 A.D. by Maharana Udai Singh; the city is a harmonious Indian blend of whitewashed buildings, marble palaces, lakeside gardens, temples and havelis. Overnight stay in Udaipur.
+
+<p><b>Day 4: Udaipur - Sightseeing</b></p>
+
+Enjoy your breakfast this morning at the hotel, and proceed for sightseeing of Udaipur. Udaipur is also a centre of historic arts and crafts of Mewar.  During a guided tour you will visit the CITY PALACE built in 1725.  The grand City Palace is actually a conglomerate of eleven palaces overlooking the sprawling Lake Pichola. The temple has a black marble image of Lord Vishnu, which is unusual for the northern part of the country, where statues of Gods are normally in marble; Later visit Sahelion Ki Bari that is a small ornamental garden built in the honor of Royal Ladies for recreational purpose. Next is the visit to Bhartiya Lok Kala Museum. In addition, the museum runs short courses in puppet making and theatre.  Follow by a visit to Eklingji & Nagda Temples - 22 kms from Udaipur.  In the evening you will enjoy a leisurely boat ride on Lake Pichola with its main attractions - the beautiful stretch of water surrounding the two marvelous structures, Jag Niwas and Jag Mandir, and is the lifeline of Udaipur city. Lake Pichola is about 4 kms in length and 3 kms wide.  The city palace extends along the eastern shore of the lake and you can go for a boat ride from Bansi Ghat. (Subject to water level in the lake).  Overnight stay in Udaipur.
+
+<p><b>Day 5: Udaipur - Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to the airport for your onward flight or back home..
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    <th>Premium</th>
+    
+  </tr>
+  <tr>
+    <td>Mount Abu</td>
+    <td>  Sunset Inn or similar</td>
+    <td>Bikaner House or similar</td>
+    <td>Bikaner House or similar</td>
+  
+    
+  </tr>
+  <tr>
+    <td>Udaipur</td>
+    <td>Valley View or similar</td>
+    <td>Rajputana Resort or similar</td>
+    <td>Lalit Laxmi Vilas or similar</td>
+    
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th>  Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Extra Bed</th>
+    <th>Single</th>
+    
+  </tr>
+  
+  <tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>18990</td>
+    <td>14990</td>
+    <td>5990</td>
+    <td>32990</td>
+    
+  </tr>
+  <tr>
+    <td>Standard</td>
+    <td>  01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>22990</td>
+    <td>18990</td>
+    <td>5990</td>
+    <td>40990</td>
+    
+  </tr>
+
+  <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>24990</td>
+    <td>20990</td>
+    <td>9990</td>
+    <td>42990</td>
+    
+  </tr>
+  <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td> 29990</td>
+    <td>25990</td>
+    <td>10990</td>
+    <td>53990</td>
+    
+  </tr>
+  <tr>
+    <td>Premium</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>29990</td>
+    <td>25990</td>
+    <td>10990</td>
+    <td>52990</td>
+    
+  </tr>
+
+  <tr>
+    <td>Premium</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>36990</td>
+    <td>32990</td>
+    <td>12990</td>
+    <td>66990</td>
+    
+  </tr>
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>2 Nights in Mount Abu with breakfast</li><br>
+  <li>2 Nights in Udaipur with breakfast</li><br>
+  <li>All transfers & local sightseeing by AC vehicle</li><br>
+  
+
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

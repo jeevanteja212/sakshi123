@@ -1,0 +1,313 @@
++<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Coorg</b></p>
+
+Welcome to Karnataka. Arrive at airport/railway station and proceed to Coorg for your hotel stay. Coorg, also called Kodagu, It is one of the beautiful hill stations which include beautiful towns, misty hills, gushing streams and lush green vegetation. You have rest of day at leisure. Overnight stay in Coorg.
+
+Meals:  Dinner
+<p><b>Day 2: Coorg - Sightseeing</b></p>
+
+Today after breakfast visit Bylakuppe - largest Tibetan settlement in South India and it’s famous for Tibetian Golden Temple. And Later Kaveri Nisargadhama an island formed by river Cauvery. Cauvery Nisargadhama, it is a combination of lush green foliage, thick groves of bamboo, rosewood and teak. On arrival, check in the hotel and freshen up. Spend rest of day is at leisure. Overnight stay in Coorg.
+
+Meals: Breakfast, Dinner
+
+<p><b>Day 3: Coorg</b></p>
+
+Full day is free for leisure. Overnight stay in Coorg.
+
+Meals: Breakfast, Dinner
+
+
+
+<p><b>Day 4: Coorg – Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to the airport for your onward flight or back home.
+
+Meals: Breakfast
+
+<
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    <th>Premium</th>
+    
+    
+  </tr>
+  <tr>
+    <td>Coorg</td>
+    <td>Coorg International</td>
+    <td>Heritage Resort Coorg</td>
+    <td>Windflower Resort</td>
+    </tr>
+
+      
+  
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+
+  <table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Extra Bed</th>
+  
+  </tr>
+
+  <tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>18990</td>
+    <td>15990</td>
+    <td>10990</td>
+    </tr>
+
+    <tr>
+    <td>Standard</td>
+    <td>01 oct 2018</td>
+    <td>31 mar 2019</td>
+    <td>15990</td>
+    <td>13990</td>
+    <td>5990</td>
+    </tr>
+
+    <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>25990</td>
+    <td>22990</td>
+    <td>17990</td>
+    </tr>
+
+    <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>18990</td>
+    <td>16990</td>
+    <td>9990</td>
+    </tr>
+
+    <tr>
+    <td>Premium</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>28990</td>
+    <td>25990</td>
+    <td>20990</td>
+    </tr>
+
+     <tr>
+    <td>Premium</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>26990</td>
+    <td>23990</td>
+    <td>10990</td>
+    </tr>
+
+
+
+    
+  
+  
+</table>
+
+  
+
+  
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>3 Nights in Coorg  </li><br>
+  <li>Meals - breakfast, dinner (MAP)</li><br>
+  <li>Local Sightseeing in Coorg on private</li><br>
+  <li>Return Bangalore airport transfer on private</li>
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls etc.</li><br>
+  <li>GST will be applicable on total invoice</li>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019 </li>
+  <li>High season surcharges will be applicable</li>
+  <li>Prices are subject to change without prior notice</li>
+  <li>Rooms/Seats are subject to availability at the time of booking</li>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose & hotel policy</li>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li>
+  <li>Cancellation charges applicable as per company policy </li>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights and acts or forces of nature</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

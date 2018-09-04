@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Hyderabad - Local Sightseeing</b></p>
+
+Arrival at Udaipur and proceed to hotel for Check in. Later proceed for Local sightseeing. Visit Snow World - India’s first and World’s best snow theme park helps to experience snow fall and polar climate as if it is a polar region, then proceed to Birla Mandir - 2000 tonnes of white marble from Rajasthan mixed with 10 years of dedicated work of sculptures – created this captivating Temple, standing on a 280 feet high hill. Birla Planetarium - Developed with technological assistance from Japan with cosmic presentation of international standards. Most attractive feature is the Sky Show. Birla Planetarium - Developed with technological assistance from Japan with cosmic presentation of international standards. Most attractive feature is the Sky Show. NTR Gardens - Ride on a toy train, Japanese garden, Desert Garden, Roaring Cascade, Giant Wheel, boating, car cafes, machan Restaurant- just a few attractions of NTR Gardens. Necklace Road - Breath-taking stretch surrounded by three parks, a lake and amusement park, fine dining restaurants and eateries offering Indian to Chinese. You can watch a video on Necklace Road that our very own team created for brief understanding about the place. Overnight stay in Hyderabad.
+
+<p><b>Day 2: Hyderabad – Day tour to Ramoji Film City</b></p>
+
+After Breakfast, proceed to visit primary tourist place of Hyderabad, Ramoji Film City. Full day would be nearly sufficient at Ramoji Film City. Ramoji Film City - One of the largest and glamorous film studios in the world, Ramoji Film City has also secured a place in the Guinness Book of World Records. Captivating architecture of the studios accompanied with a range of modern settings makes it a favourite place of film-makers; while a wide array of entertainment choices makes it a popular choice of tourists. Overnight stay in Hyderabad.<br><br>
+
+<p><b>Day 3: Hyderabad – Local Sightseeing</b></p>
+
+Enjoy your breakfast this morning at the hotel and proceed to Golconda Fort - First built by Kakatiya dynasty later developed by Qutub Shahi Kings. Attractions- sound and light show in night; Water supply system, 'Rahban' cannon, Ramdas’ prison.  Qutub Shahi Tombs - One of the oldest monuments of Hyderabad; tombs of seven Qutub Shahi rulers presenting a beautiful blend of Persian and Indian architectural styles. Salar Jung Museum - 3rd largest museum in India with 43000 art objects, 9000 manuscripts and 47000 printed books, spread in 38 galleries. Not to be missed- Veiled marble statue of Rebecca, 19th C British Musical Clock, etc. Chowmahalla Palace - Built in the 18th century during the rule of fifth Nizam, Afzal-ud-Daula, Asaf Jah V, said to resemble Shah Palace of Tehran in Iran in its architectural beauty. Charminar - Built in 1591 by Sultan Mohammed Quli Qutb Shah in the honour of his wife Bhagmati. Also known as known as ‘Arc de Triomphe of the East’. Lad Bazaar – Evening shopping can be done here. Popular bangles and pearl market, since the time of Nizams. Offers a living heritage of the city. Overnight stay in Hyderabad.
+
+
+<p><b>Day 4: Hyderabad - Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to the airport for your onward flight or back home.
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    <th>Premium</th>
+    
+  </tr>
+  <tr>
+    <td>Hyderabad, Telangana, India</td>
+    <td>Justa on Neckless Road / Aditya Park Sarovar or similar</td>
+    <td>Justa on Neckless Road / Aditya Park Sarovar or similar</td>
+    <td>Radisson Hyderabad Hitec City or similar</td>
+  
+    
+  </tr>
+     
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th>  Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Extra Bed</th>
+    <th>Single</th>
+    
+  </tr>
+  
+  <tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>16990</td>
+    <td>13990</td>
+    <td>7990</td>
+    <td>30990</td>
+    
+  </tr>
+  <tr>
+    <td>Standard</td>
+    <td>  01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>14990</td>
+    <td>11990</td>
+    <td>7490</td>
+    <td>26990</td>
+    
+  </tr>
+
+  <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>19990</td>
+    <td>17990</td>
+    <td>11990</td>
+    <td>36990</td>
+    
+  </tr>
+  <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td> 29990</td>
+    <td>25990</td>
+    <td>10990</td>
+    <td>53990</td>
+    
+  </tr>
+  <tr>
+    <td>Premium</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>16990</td>
+    <td>14490</td>
+    <td>9990</td>
+    <td>30990</td>
+    
+  </tr>
+
+  <tr>
+    <td>Premium</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>19990</td>
+    <td>16490</td>
+    <td>11990</td>
+    <td>34990</td>
+    
+  </tr>
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>3 Nights in Hyderabad with breakfast</li><br>
+  <li>Full Day tour at Ramoji Film City (Entrance not included)</li><br>
+  <li>Local sightseeing and return airport transfers by AC vehicle</li><br>
+  
+
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

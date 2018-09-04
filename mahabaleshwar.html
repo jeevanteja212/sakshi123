@@ -1,0 +1,267 @@
++<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Mahabaleshwar – Local sightseeing</b></p>
+
+Welcome in Mahabaleshwar. Proceed to Hotel on your own. Arrive and check in at hotel. Surrounded by lush greenery, Venna Lake, is a major tourist attraction in Mahabaleshwar. Return to hotel & enjoy dinner. Overnight stay in Mahabaleshwar.
+
+
+
+<p><b>Day 2: Mahabaleshwar – Local sightseeing</b></p>
+
+Take in the essence of Mahabaleshwar by visiting the Mapro Garden, a place where strawberries grow in abundance. Later in the afternoon, you can make your way to Pratapgarh Fort and lose yourself in the stories of heroism and fierce battles. In the evening, watch the sunset from the famous Elephant's Head Point, which as the name suggests, is in the shape of an Elephant's head. Dinner & overnight stay in Mahabaleshwar.
+
+
+
+<p><b>Day 3: Mahabaleshwar – Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to next destination or hometown by your own.
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    
+    
+    
+  </tr>
+  <tr>
+    <td>Mahabaleshwar</td>
+    <td>Sumanraj</td>
+    <td>Saket Plaza</td>
+    </tr>
+
+      
+  
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+
+  <table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Extra Bed</th>
+  
+  </tr>
+
+  <tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>10990</td>
+    <td>9990</td>
+    <td>6990</td>
+    </tr>
+
+    <tr>
+    <td>Deluxe</td>
+    <td>01 oct 2018</td>
+    <td>30 mar 2018</td>
+    <td>12990</td>
+    <td>11990</td>
+    <td>8990</td>
+    </tr>
+
+    
+
+
+    
+  
+  
+</table>
+
+  
+
+  
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>2 Nights in Mahabaleshwar with breakfast & Dinner (Pure Veg)</li><br>
+  <li>All transfers & local sightseeing by private AC vehicle (Ex Mahabaleshwar)</li>
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare & Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 30th September 2018 </li>
+  <li>High season surcharges will be applicable</li>
+  <li>Prices are subject to change without prior notice</li>
+  <li>Rooms/Seats are subject to availability at the time of booking</li>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose & hotel policy</li>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li>
+  <li>Cancellation charges applicable as per company policy </li>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights and acts or forces of nature</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
